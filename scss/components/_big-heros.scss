@@ -1,0 +1,166 @@
+.section-heros-product {
+    .contain-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .contain-text {
+            width: 400px;
+
+            h3 {
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 140%;
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                color: #333237;
+            }
+
+            .line-pane {
+                padding: padding 10px 12px;
+                border-left: 5px solid #FB8351;
+
+                p {
+                    font-family: Poppins, Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 160%;
+                    /* or 26px */
+
+                    display: flex;
+                    align-items: center;
+                    margin-left: 12px;
+                    color: #60697B;
+                }
+            }
+        }
+
+        .contain-image {
+            .bingkai {
+                width: 426px;
+                height: 426px;
+                position: relative;
+                border: 8px solid #2666CF;
+                border-radius: 10px;
+            }
+
+            .product-hero {
+                position: absolute;
+                top: 30px;
+                border-radius: 10px;
+            }
+
+            .posisi-card {
+                position: absolute;
+                top: 300px;
+                left: -173px;
+
+                .card {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                    gap: 20px;
+                    align-items: center;
+
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+
+                    h3 {
+                        font-family: Poppins, Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 140%;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: #333237;
+                    }
+
+                    p {
+                        font-family: Poppins, Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 140%;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: #333237;
+                    }
+                }
+            }
+
+            .posisi-card-2 {
+                position: absolute;
+                right: -28px;
+                top: -18px;
+
+                img {
+                    border-radius: 8px solid white;
+                }
+            }
+        }
+
+    }
+}
+
+.section-product-new {
+    .uk-section {
+        background-color: #666;
+    }
+    .owl-carousel {
+        position: relative;
+        margin-top: 30px;
+    }
+    .owl-nav {
+        position: absolute;
+        top: -60px;
+        left: 10px;
+    }
+    .uk-card-primary {
+        border-radius: 8px;
+        .uk-card-body{
+            padding: 10px 10px;
+
+        }
+    }
+    h3 {
+        margin-top: 10px;
+    }
+    .uk-card {
+        > {
+            &:last-child {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    p {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .owl-next {
+        background: #3286f0;
+    }
+    .owl-theme {
+        .owl-nav {
+            [class*='owl-'] {
+                background: #383838;
+            }
+        }
+    }
+    .owl-dots {
+        margin-top: 30px;
+    }
+    .uk-card-title {
+        padding-bottom: 20px;
+    }    
+}

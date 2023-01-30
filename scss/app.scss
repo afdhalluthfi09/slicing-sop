@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+//variable dan function
+
+@import 'function';
+@import 'variable';
+// base & layout
+@import 'base';
+@import 'breakpoints';
+@import 'grid';
+
+//colors
+@import 'colors';
+
+//utilities (margin,padding,opacity)
+@import 'utilities';
+
+//components
+@import 'components/big-heros'
