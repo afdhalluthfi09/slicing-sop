@@ -1831,8 +1831,12 @@ body {
   border-radius: 8px solid white;
 }
 
+.section-product-new {
+  padding: 40px 0;
+  background-color: white;
+}
 .section-product-new .uk-section {
-  background-color: #666;
+  background-color: white;
 }
 .section-product-new .owl-carousel {
   position: relative;
@@ -1869,9 +1873,11 @@ body {
 .section-product-new .uk-card-primary .uk-card-body .btn-price .btn-pay .btn-pesan {
   width: 80px;
   height: 54px;
-  background: rgba(38, 102, 207, 0.3);
+  background: #2666CF;
   border-radius: 6px;
   font-size: 12px;
+  border: none;
+  color: white;
 }
 .section-product-new h3 {
   margin-top: 10px;
@@ -1898,10 +1904,196 @@ body {
 }
 
 .section-promo {
+  padding: 40px 100px;
   display: flex;
   flex-direction: row;
 }
 .section-promo .card {
+  padding: 20px 30px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.section-promo .card img {
+  -webkit-clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
+          clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
+}
+.section-promo .card .sk-card-body h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #151515;
+}
+.section-promo .card .sk-card-body p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  /* identical to box height */
+  text-align: justify;
+  text-transform: capitalize;
+  color: #697586;
+}
+
+.section-catalog {
+  padding: 40px 0;
+  background: white;
+}
+.section-catalog .title-catalog {
+  text-align: center;
+}
+.section-catalog .flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.section-catalog .flex-row .card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-catalog .flex-row .card .uk-card-primary {
+  border-radius: 8px;
+}
+.section-catalog .flex-row .card .uk-card-primary .uk-card-body {
+  padding: 10px 10px;
+}
+.section-catalog .flex-row .card .uk-card-primary .uk-card-body .btn-price {
+  display: flex;
+  flex-direction: row;
+}
+.section-catalog .flex-row .card .uk-card-primary .uk-card-body .btn-price .btn-pay {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.section-catalog .flex-row .card .uk-card-primary .uk-card-body .btn-price .btn-pay .btn-details {
+  width: 80px;
+  height: 54px;
+  background: rgba(38, 102, 207, 0.3);
+  border-radius: 6px;
+  font-size: 12px;
+}
+.section-catalog .flex-row .card .uk-card-primary .uk-card-body .btn-price .btn-pay .btn-pesan {
+  width: 80px;
+  height: 54px;
+  background: #2666CF;
+  border-radius: 6px;
+  font-size: 12px;
+  border: none;
+  color: white;
+}
+
+.soon {
+  padding: 100px 10px;
+}
+.soon h3 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #333237;
+}
+.soon .content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.soon .content-row .sk-card {
+  width: 392px;
+}
+.soon .content-row .sk-card .img-product {
+  -webkit-clip-path: inset(3% 0 5% 0% round 5% 5% 5% 5%);
+          clip-path: inset(3% 0 5% 0% round 5% 5% 5% 5%);
+  background-position: center;
+}
+.soon .content-row .sk-card h3 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333237;
+}
+@media (max-width: 480px) {
+  .soon .content-row {
+    flex-direction: column;
+  }
+}
+
+.sk-footer {
+  height: 481px;
+  background: #1C1D1F;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 100px;
+  gap: 30px;
+  justify-content: center;
+}
+.sk-footer .bact1 h4 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: white;
+}
+.sk-footer .bact1 .contain-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.sk-footer .bact1 .sk-copy-right p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.sk-footer .bact2 h5 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.sk-footer .bact3 h5 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.sk-footer .bact4 h5 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .sk-footer {
+    width: 100%;
+  }
+  .sk-footer .bact2 {
+    display: none;
+  }
+  .sk-footer .bact3 {
+    display: none;
+  }
+  .sk-footer .bact4 {
+    display: none;
+  }
 }/*# sourceMappingURL=app.css.map */
