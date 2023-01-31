@@ -129,6 +129,30 @@
         border-radius: 8px;
         .uk-card-body{
             padding: 10px 10px;
+            .btn-price{
+                display: flex;
+                flex-direction: row;
+                .btn-pay{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                    .btn-details{
+                        width: 80px;
+                        height: 54px;
+                        background: rgba(38, 102, 207, 0.3);
+                        border-radius: 6px;
+                        font-size: 12px;
+                    }
+                    .btn-pesan{
+                        width: 80px;
+                        height: 54px;
+                        background: rgba(38, 102, 207, 0.3);
+                        border-radius: 6px;
+                        font-size: 12px;
+                    }
+                }
+            }
 
         }
     }
@@ -136,11 +160,10 @@
         margin-top: 10px;
     }
     .uk-card {
-        > {
-            &:last-child {
-                margin-top: 0;
-                margin-bottom: 10px;
-            }
+         
+        &:last-child {
+            margin-top: 0;
+            margin-bottom: 10px;
         }
     }
     p {
@@ -163,4 +186,13 @@
     .uk-card-title {
         padding-bottom: 20px;
     }    
+}
+
+.section-promo{
+    display: flex;
+    flex-direction: row;
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
 }
