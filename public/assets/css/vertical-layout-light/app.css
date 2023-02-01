@@ -2096,4 +2096,70 @@ body {
   .sk-footer .bact4 {
     display: none;
   }
+}
+
+.section-details {
+  margin-top: 20px;
+}
+.section-details .flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.section-details .flex-row h3 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #2D394E;
+}
+.section-details .flex-row .contain-produk img {
+  -webkit-clip-path: inset(3% 0 5% 0% round 5% 5% 5% 5%);
+          clip-path: inset(3% 0 5% 0% round 5% 5% 5% 5%);
+}
+.section-details .flex-row .contain-produk .card {
+  padding: 10px;
+}
+.section-details .flex-row .contain-produk .card p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D394E;
+}
+.section-details .flex-row .contain-produk-price .card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-details .flex-row .contain-produk-price .card .uk-card-primary {
+  border-radius: 8px;
+}
+.section-details .flex-row .contain-produk-price .card .uk-card-primary img {
+  width: 100%;
+  border-radius: 8px;
+}
+.section-details .flex-row .contain-produk-price .card .uk-card-primary .uk-card-body {
+  padding: 10px 10px;
+}
+.section-details .flex-row .contain-produk-price .card .uk-card-primary .uk-card-body .btn-price {
+  display: flex;
+  flex-direction: row;
+}
+.section-details .flex-row .contain-produk-price .card .uk-card-primary .uk-card-body .btn-price .btn-pay {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.section-details .flex-row .contain-produk-price .card .uk-card-primary .uk-card-body .btn-price .btn-pay .btn-pesan {
+  width: 280px;
+  height: 54px;
+  background: #2666CF;
+  border-radius: 6px;
+  font-size: 12px;
+  border: none;
+  color: white;
 }/*# sourceMappingURL=app.css.map */
