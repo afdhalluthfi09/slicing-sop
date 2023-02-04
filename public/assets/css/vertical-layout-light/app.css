@@ -1853,6 +1853,9 @@ body {
 .section-product-new .uk-card-primary .uk-card-body {
   padding: 10px 10px;
 }
+.section-product-new .uk-card-primary .uk-card-body .margin-tanos {
+  margin-top: 99px;
+}
 .section-product-new .uk-card-primary .uk-card-body .btn-price {
   display: flex;
   flex-direction: row;
@@ -1869,6 +1872,10 @@ body {
   background: rgba(38, 102, 207, 0.3);
   border-radius: 6px;
   font-size: 12px;
+  padding: auto;
+  line-height: 54px;
+  text-align: center;
+  text-decoration: none;
 }
 .section-product-new .uk-card-primary .uk-card-body .btn-price .btn-pay .btn-pesan {
   width: 80px;
@@ -1878,6 +1885,10 @@ body {
   font-size: 12px;
   border: none;
   color: white;
+  padding: auto;
+  line-height: 54px;
+  text-align: center;
+  text-decoration: none;
 }
 .section-product-new h3 {
   margin-top: 10px;
@@ -1917,21 +1928,22 @@ body {
   gap: 10px;
 }
 .section-promo .card img {
+  width: 420px;
+  height: 420px;
   -webkit-clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
           clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
 }
 .section-promo .card .sk-card-body h3 {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
-  /* identical to box height */
   text-transform: capitalize;
   color: #151515;
 }
 .section-promo .card .sk-card-body p {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -1959,11 +1971,18 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
+.section-catalog .flex-row .card img {
+  width: 372px;
+  height: 324px;
+}
 .section-catalog .flex-row .card .uk-card-primary {
   border-radius: 8px;
 }
 .section-catalog .flex-row .card .uk-card-primary .uk-card-body {
   padding: 10px 10px;
+}
+.section-catalog .flex-row .card .uk-card-primary .uk-card-body .uk-card-title {
+  width: 300px;
 }
 .section-catalog .flex-row .card .uk-card-primary .uk-card-body .btn-price {
   display: flex;
@@ -1981,6 +2000,10 @@ body {
   background: rgba(38, 102, 207, 0.3);
   border-radius: 6px;
   font-size: 12px;
+  padding: auto;
+  line-height: 54px;
+  text-align: center;
+  text-decoration: none;
 }
 .section-catalog .flex-row .card .uk-card-primary .uk-card-body .btn-price .btn-pay .btn-pesan {
   width: 80px;
@@ -1990,6 +2013,10 @@ body {
   font-size: 12px;
   border: none;
   color: white;
+  padding: auto;
+  line-height: 54px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .soon {
@@ -2115,8 +2142,10 @@ body {
   color: #2D394E;
 }
 .section-details .flex-row .contain-produk img {
-  -webkit-clip-path: inset(3% 0 5% 0% round 5% 5% 5% 5%);
-          clip-path: inset(3% 0 5% 0% round 5% 5% 5% 5%);
+  width: 420px;
+  height: 420px;
+  -webkit-clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
+          clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
 }
 .section-details .flex-row .contain-produk .card {
   padding: 10px;
@@ -2128,6 +2157,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #2D394E;
+  text-align: justify;
+}
+.section-details .flex-row .contain-produk .card ol li {
+  margin-bottom: 5px;
+  text-align: justify;
 }
 .section-details .flex-row .contain-produk-price .card {
   width: -webkit-fit-content;
@@ -2138,7 +2172,10 @@ body {
   border-radius: 8px;
 }
 .section-details .flex-row .contain-produk-price .card .uk-card-primary img {
-  width: 100%;
+  width: 372px;
+  height: 324px;
+  -webkit-clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
+          clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
   border-radius: 8px;
 }
 .section-details .flex-row .contain-produk-price .card .uk-card-primary .uk-card-body {

@@ -131,6 +131,9 @@
         border-radius: 8px;
         .uk-card-body{
             padding: 10px 10px;
+            .margin-tanos{
+                margin-top: 99px;
+            }
             .btn-price{
                 display: flex;
                 flex-direction: row;
@@ -145,6 +148,10 @@
                         background: rgba(38, 102, 207, 0.3);
                         border-radius: 6px;
                         font-size: 12px;
+                        padding: auto;
+                        line-height: 54px;
+                        text-align: center;
+                        text-decoration: none;
                     }
                     .btn-pesan{
                         width: 80px;
@@ -154,6 +161,10 @@
                         font-size: 12px;
                         border: none;
                         color: #ffff;
+                        padding: auto;
+                        line-height: 54px;
+                        text-align: center;
+                        text-decoration: none;
                     }
                 }
             }
@@ -204,23 +215,22 @@
         align-items: center;
         gap: 10px;
         img{
+            width: 420px;
+            height: 420px;
             clip-path: inset(5% 2% 15% 10% round 5% 5% 5% 5%);
         }
         .sk-card-body{
             h3{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 36px;
                 line-height: 44px;
-                /* identical to box height */
-
                 text-transform: capitalize;
-
                 color: #151515;
             }
             p{
-                font-family: Poppins;
+                font-family: Poppins,Arial, Helvetica, sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 22px;
@@ -249,10 +259,17 @@
         gap: 10px;
         .card{
             width: fit-content;
+            img{
+                width:372px; 
+                height:324px;
+            }
             .uk-card-primary {
                 border-radius: 8px;
                 .uk-card-body{
                     padding: 10px 10px;
+                    .uk-card-title{
+                        width: 300px;
+                    }
                     .btn-price{
                         display: flex;
                         flex-direction: row;
@@ -267,6 +284,10 @@
                                 background: rgba(38, 102, 207, 0.3);
                                 border-radius: 6px;
                                 font-size: 12px;
+                                padding: auto;
+                                line-height: 54px;
+                                text-align: center;
+                                text-decoration: none;
                             }
                             .btn-pesan{
                                 width: 80px;
@@ -276,6 +297,10 @@
                                 font-size: 12px;
                                 border: none;
                                 color: #ffff;
+                                padding: auto;
+                                line-height: 54px;
+                                text-align: center;
+                                text-decoration: none;
                             }
                         }
                     }
