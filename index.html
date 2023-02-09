@@ -20,7 +20,9 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,7 +86,11 @@
                             <div class="btn-price">
                                 <div class="btn-pay"> 
                                     <a role="button" href="detail-product.html" class="btn-details">Detail</a>
-                                    <a role="button" class="btn-pesan" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pesan Sekarang</a>
+                                    <a role="button" class="btn-pesan" 
+                                                    data-bs-toggle="modal"
+                                                    data-judul="Sop HRD"
+                                                    data-harga="175.000"
+                                                    data-bs-target="#staticBackdrop">Pesan Sekarang</a>
                                     <small>Rp150.000</small>
                                 </div>
                             </div>
@@ -100,7 +106,11 @@
                             <div class="btn-price">
                                 <div class="btn-pay"> 
                                     <a role="button" href="detail-product.html" class="btn-details">Detail</a>
-                                    <a role="button" class="btn-pesan" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pesan Sekarang</a>
+                                    <a role="button" class="btn-pesan" 
+                                                    data-bs-toggle="modal"
+                                                    data-judul="SOP Manajemen Bisnis"
+                                                    data-harga="275.000"
+                                                    data-bs-target="#staticBackdrop">Pesan Sekarang</a>
                                     <small>Rp275.000</small>
                                 </div>
                             </div>
@@ -116,7 +126,11 @@
                             <div class="btn-price">
                                 <div class="btn-pay"> 
                                     <a role="button" href="detail-product.html" class="btn-details">Detail</a>
-                                    <a role="button" class="btn-pesan">Pesan Sekarang</a>
+                                    <a role="button"
+                                            data-judul="SOP Keuangan Akuntansi"
+                                            data-harga="175.000" 
+                                            class="btn-pesan"
+                                            data-bs-target="#staticBackdrop">Pesan Sekarang</a>
                                     <small>Rp175.000</small>
                                 </div>
                             </div>
@@ -132,7 +146,11 @@
                             <div class="btn-price">
                                 <div class="btn-pay"> 
                                     <a role="button" href="detail-product.html" class="btn-details">Detail</a>
-                                    <a role="button" class="btn-pesan" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pesan Sekarang</a>
+                                    <a role="button" class="btn-pesan" 
+                                                data-bs-toggle="modal"
+                                                data-judul="SOP Manajement Sekolah"
+                                                data-harga="200.000"
+                                                data-bs-target="#staticBackdrop">Pesan Sekarang</a>
                                     <small>Rp200.000</small>
                                 </div>
                             </div>
@@ -148,7 +166,11 @@
                             <div class="btn-price">
                                 <div class="btn-pay"> 
                                     <a role="button" href="detail-product.html" class="btn-details">Detail</a>
-                                    <a role="button" class="btn-pesan" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pesan Sekarang</a>
+                                    <a role="button" class="btn-pesan" 
+                                            data-bs-toggle="modal"
+                                            data-judul="SOP Pesantren/Boarding School"
+                                            data-harga="250.000"
+                                            data-bs-target="#staticBackdrop">Pesan Sekarang</a>
                                     <small>Rp250.000</small>
                                 </div>
                             </div>
@@ -503,7 +525,7 @@ saya : ${inputPemesan.value},
 ingin menanyakan apakah buku/sop ini ${inputJudulBuku.value},
 harga ${inpuHargaBuku.value}
 masih tersedia ?`;
-                    const url = `https://api.whatsapp.com/send?phone=6285643287040&text=${encodeURIComponent(template)}`;
+                    const url = `https://api.whatsapp.com/send?phone=6281818182171&text=${encodeURIComponent(template)}`;
                     window.location.href=url
                 })
     </script>
