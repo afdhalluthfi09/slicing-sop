@@ -143,7 +143,6 @@
     </footer>
 
 <!-- Modal -->
-<!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -151,58 +150,61 @@
           <h1 class="modal-title fs-5" id="staticBackdropLabel">Form Pemesanan</h1>
           <button type="button" id="btn-close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <!-- Bioadata Pemesanan -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Isi Bioadata Pemesanan
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="name" id="name" class="form-label">Nama</label>
-                                <input type="text" id="namaPemesan" class="form-control">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="name" id="name" class="form-label">No.Hp</label>
-                                <input type="text" id="nomorHp" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Data Pemesanan -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Data Pesananan
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <lable class="form-label" id="labeljudulbuku">Sop</lable>
-                                <input type="text" class="form-control" name="judulbuku" id="judulbuku"/>
-                            </div>
-                            <div class="col-md-12">
-                                <lable class="form-label" id="hargabuku">Harga</lable>
-                                <input type="text" class="form-control" name="hargabuku" id="inputhargabuku"/>
+        <form id="form" >
+            <div class="modal-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- Bioadata Pemesanan -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Isi Bioadata Pemesanan
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name" id="name" class="form-label">Nama</label>
+                                    <input type="text" id="namaPemesan" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name" id="name" class="form-label">No.Hp</label>
+                                    <input type="text" id="nomorHp" class="form-control">
+                                </div>
                             </div>
                         </div>
+                      </div>
+                    </div>
+                    <!-- Data Pemesanan -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Data Pesananan
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <lable class="form-label" id="labeljudulbuku">Sop</lable>
+                                    <input type="text" class="form-control" name="judulbuku" id="judulbuku"/>
+                                </div>
+                                <div class="col-md-12">
+                                    <lable class="form-label" id="hargabuku">Harga</lable>
+                                    <input type="text" class="form-control" name="hargabuku" id="inputhargabuku"/>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" id="btn-batal" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-          <button type="button" class="btn btn-primary">Pesan</button>
-        </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="btn-batal" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-primary">Pesan</button>
+            </div>
+        </form>
+        
       </div>
     </div>
   </div>
@@ -215,7 +217,7 @@
             let inputJudulBuku=document.getElementById('judulbuku');
             let inputPemesan=document.getElementById('namaPemesan');
             let inputHp=document.getElementById('nomorHp');
-    
+            let form =document.getElementById('form');
     
             let btnBatal =document.getElementById('btn-batal');
             let btnClose =document.getElementById('btn-close');
